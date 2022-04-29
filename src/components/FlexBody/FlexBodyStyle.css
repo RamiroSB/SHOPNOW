@@ -1,0 +1,13 @@
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.flexContainer img {
+    padding: 1rem;
+    max-width: 60%;
+    width: 30%;
+}

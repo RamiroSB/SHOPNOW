@@ -1,11 +1,12 @@
 import React from 'react';
 import { UncontrolledCarousel } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "./SliderStyle.css"
 
 
 export const Slider = () => {
 
-  return <div>
+  return <div className='SliderHome'>
       <UncontrolledCarousel
   items={[
     /* {

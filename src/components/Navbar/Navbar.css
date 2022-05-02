@@ -101,6 +101,10 @@
     background-color: #292828!important;
   }
 
+  .barra2 a {
+    margin: 10%;
+  }
+
   .container-fluid {
       flex-direction: row !important;
   }

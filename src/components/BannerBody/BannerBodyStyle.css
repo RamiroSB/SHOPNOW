@@ -1,0 +1,12 @@
+.contenedorBanner{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.contenedorBanner img {
+    width: 80%;
+}

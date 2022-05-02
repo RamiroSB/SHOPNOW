@@ -66,11 +66,6 @@
     border-radius: 10px!important;
     margin-left: 30px;
 }
-.flexContainer {
-    box-shadow: 15px 17px 13px -11px rgba(0,0,0,0.9);
--webkit-box-shadow: 15px 17px 13px -11px rgba(0,0,0,0.9);
--moz-box-shadow: 15px 17px 13px -11px rgba(0,0,0,0.9);
-}
 
 .spanIva {
     background-color: white;

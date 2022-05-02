@@ -1,4 +1,3 @@
-import { Imagenes } from './components/Body/Imagenes';
 import { EmpleadosLista } from './components/EmpleadosLista/EmpleadosLista';
 import Barra1 from './components/Navbar/Navbar';
 import { Slider } from './components/Slider/Slider';
@@ -13,8 +12,7 @@ import { Rma } from './components/pages/Rma';
 import { SelectorRma } from './components/pages/SelectorRma';
 import { RmaItemFallado } from './components/pages/RmaItemFallado';
 import { ApiMap } from './components/ApiMarcas/ApiMap';
-import { FlexBody } from './components/FlexBody/FlexBody';
-import { FlexEnvios } from './components/FlexEnvios/FlexEnvios';
+import { HomePage } from './components/HomePage/HomePage';
 
 function App() {
   return (
@@ -23,11 +21,9 @@ function App() {
 
         <Barra1/>
         <Slider/> 
-        <FlexEnvios/>
-        <FlexBody/>
         
             <Routes>
-              <Route path="/" element= {<Imagenes/> }/>
+              <Route path="/" element= {<HomePage/> }/>
               <Route path="/empleados" element= { <EmpleadosLista/> }/>
               <Route path="/empleados/:catId" element= { <EmpleadosLista/> }/>
               <Route path='/newsletter' element= {<Newsletter/>}/>
@@ -43,7 +39,6 @@ function App() {
             </Routes>
 
         <Footer/>
-
     </BrowserRouter> 
   );
 }

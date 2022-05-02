@@ -13,6 +13,7 @@ import { SelectorRma } from './components/pages/SelectorRma';
 import { RmaItemFallado } from './components/pages/RmaItemFallado';
 import { ApiMap } from './components/ApiMarcas/ApiMap';
 import { HomePage } from './components/HomePage/HomePage';
+import { FooterSN } from './components/Footer/FooterSN';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
               <Route path="/marcas/:id" element= { <ApiMap/> }/>
             </Routes>
 
+        <FooterSN/>
         <Footer/>
     </BrowserRouter> 
   );

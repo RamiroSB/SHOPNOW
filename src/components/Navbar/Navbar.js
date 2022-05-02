@@ -3,38 +3,12 @@ import {Navbar, Nav, NavDropdown, Form, FormControl, Button, Container} from 're
 import './Navbar.css'
 import { Link } from 'react-router-dom'
 
-import Swal from 'sweetalert2/dist/sweetalert2.js'
-
-const loginForm = () => {
-  Swal.fire({
-      title: 'Ingrese a su cuenta',
-      html: `<input type="text" id="login" class="swal2-input" placeholder="Username">
-      <input type="password" id="password" class="swal2-input" placeholder="Password">`,
-      confirmButtonText: 'Sign in',
-      focusConfirm: false,
-      preConfirm: () => {
-        const login = Swal.getPopup().querySelector('#login').value
-        const password = Swal.getPopup().querySelector('#password').value
-        if (!login || !password) {
-          Swal.showValidationMessage(`Please enter login and password`)
-        }
-        return { login: login, password: password }
-      }
-    }).then((result) => {
-      Swal.fire({
-          icon: 'error',
-          title: '',
-          text: 'Pongase en contacto con el Digital Business Manager (martin_anusic@solutionbox.com.ar) de Solution Box',
-        })
-    })
-}
-
 
 export default class Barra1 extends Component {
 
   render() {
     return <div>
-        <Navbar bg="dark" expand="lg" className='barra'>
+        <Navbar expand="lg" className='barra'>
           <Container fluid>
             <Navbar.Brand href="/"> <Link to="/"><img src='https://raw.githubusercontent.com/RamiroSB/imagenes-shopnow/main/logo/logo.webp' alt="Logo de la pagina" className='setlogo'></img></Link></Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll"/>

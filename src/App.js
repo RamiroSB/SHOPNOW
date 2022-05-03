@@ -6,14 +6,13 @@ import { Newsletter } from './components/pages/Newsletter';
 import { NuestraEmpresa } from './components/pages/NuestraEmpresa';
 import { TrabajaConNosotros } from './components/pages/TrabajaConNosotros';
 import { Contacto } from './components/pages/Contacto';
-import { Footer } from './components/Footer/Footer';
 import { Capacitaciones } from './components/pages/Capacitaciones';
 import { Rma } from './components/pages/Rma';
 import { SelectorRma } from './components/pages/SelectorRma';
 import { RmaItemFallado } from './components/pages/RmaItemFallado';
 import { ApiMap } from './components/ApiMarcas/ApiMap';
 import { HomePage } from './components/HomePage/HomePage';
-import { FooterSN } from './components/Footer/FooterSN';
+import { HomeFooter } from './components/HomeFooter/HomeFooter';
 
 function App() {
   return (
@@ -39,8 +38,7 @@ function App() {
               <Route path="/marcas/:id" element= { <ApiMap/> }/>
             </Routes>
 
-        <FooterSN/>
-        <Footer/>
+        <HomeFooter/>
     </BrowserRouter> 
   );
 }

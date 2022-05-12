@@ -141,18 +141,26 @@
         color: black!important;
   }
 
-  .botonNav:hover{
+  .botonNav:hover {
     background-color: inherit!important;
     outline: var(--primary)!important;
     border: 1px solid var(--primary)!important;
     margin-left: 5px;
-    color: white!important;
     transition: 1s all;
+    color: white!important;
 }
-  
 
   @media (max-width: 992px) {
     .barra2{
         display: none!important;
       }
   }
+
+.linkBoton {
+  text-decoration: none !important;
+  color: white!important;
+}
+
+.linkBoton:hover {
+  color: white!important;
+}

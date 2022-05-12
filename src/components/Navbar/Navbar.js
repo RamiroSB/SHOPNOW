@@ -50,7 +50,7 @@ export default class Barra1 extends Component {
 
                   <Nav.Link id="navbarScrollingDropdown">12 y 18 CUOTAS SIN INTERES</Nav.Link>
 
-                  <Button className='botonNav'> CENTRO DE AYUDA</Button>          
+                  <Button className='botonNav'> <Link to="centro_de_ayuda" className='linkBoton'>CENTRO DE AYUDA</Link></Button>          
 
                 </Nav>
                 <Form className="d-flex barritaForm">

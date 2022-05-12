@@ -101,3 +101,112 @@
     text-decoration: none;
     color: white;
 }
+
+
+/*boton centro de ayuda */
+
+.ayudas{
+    box-sizing: border-box;
+    position: relative;
+    display:flex ;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;   
+    max-width: 100vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .ayudas {
+        flex-direction: column;        
+    }
+    
+}
+.boxAyudas{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin: 20px;
+    border-style:double;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.boxAyudas:hover{
+    background-color: rgb(211, 209, 209);
+    transition: 0.4s all;
+}
+
+.boxAyudas i {
+    margin: 10px;
+    display: inline-block ;
+    justify-content: center;
+    font-size: 50px;
+    text-align: center;
+}
+.tituloAyudas{
+    margin: 2vh;
+    display:block;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+.accesoAyuda {
+    position: relative;
+   /*  display:block; */
+   /*  flex-wrap: nowrap; */
+  /*   text-decoration:none; */
+    color: #333 ;
+    font-weight:bold;
+  /*   text-align: justify; */
+    margin:1vh;
+    cursor:pointer;
+    justify-content: flex-end;
+}
+.accesoAyuda i {
+    margin: 1vh;
+    font-size: 25px;
+}
+.listadoAyudas{
+    justify-content: flex-start ;
+    font-weight: bold ;
+    color: #555
+}
+
+.listadoAyudas ul li {
+    list-style-type:disc;
+}
+
+.ayudasMiCuenta {
+    width: 20vw;
+    /* max-width: 16vw; */
+    justify-content:center;
+}
+
+@media only screen and (max-width: 600px) {
+    .accesoAyuda {
+        /* flex-direction: column;  */   
+        text-align:center ;    
+    }
+    .ayudasMiCuenta {
+        width: auto;
+        /* text-align: center; */
+    }
+    .listadoAyudas{
+        text-align: justify;
+        justify-content: center;
+        margin-left: 2rem;
+        
+    }
+}
+
+@media only screen and (min-width: 900px) {
+.listadoCentroAyuda {
+    max-width: 250px;
+    width: 200px;
+}
+}
+
+.imgCentroDeAyuda {
+    width: 100%;
+}

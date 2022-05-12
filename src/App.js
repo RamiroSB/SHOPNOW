@@ -1,6 +1,5 @@
 import { EmpleadosLista } from './components/EmpleadosLista/EmpleadosLista';
 import Barra1 from './components/Navbar/Navbar';
-import { Slider } from './components/Slider/Slider';
 import { BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
 import { Newsletter } from './components/pages/Newsletter';
 import { NuestraEmpresa } from './components/pages/NuestraEmpresa';
@@ -13,6 +12,7 @@ import { RmaItemFallado } from './components/pages/RmaItemFallado';
 import { ApiMap } from './components/ApiMarcas/ApiMap';
 import { HomePage } from './components/HomePage/HomePage';
 import { HomeFooter } from './components/HomeFooter/HomeFooter';
+import { CentroDeAyuda } from './components/pages/CentroDeAyuda';
 
 function App() {
   return (
@@ -20,7 +20,6 @@ function App() {
     <BrowserRouter>
 
         <Barra1/>
-        <Slider/> 
         
             <Routes>
               <Route path="/" element= {<HomePage/> }/>
@@ -36,6 +35,7 @@ function App() {
               <Route path='rma3' element= { <RmaItemFallado/> } />
               <Route path='*' element= { <Navigate to ="/" /> } />
               <Route path="/marcas/:id" element= { <ApiMap/> }/>
+              <Route path="centro_de_ayuda" element= { <CentroDeAyuda/> }/>
             </Routes>
 
         <HomeFooter/>

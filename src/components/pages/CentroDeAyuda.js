@@ -6,7 +6,11 @@ export const CentroDeAyuda = () => {
     return (
         
         <>
-        <img src="https://raw.githubusercontent.com/RamiroSB/imagenes-shopnow/main/CentroDeAyuda/BannerCentroDeAyuda.jpg" className="imgCentroDeAyuda" alt="Imagen banner centro de ayuda"></img>
+            <div className="contenedorImgBanner">
+                <img src="https://raw.githubusercontent.com/RamiroSB/imagenes-shopnow/main/CentroDeAyuda/BannerCentroDeAyuda.jpg" className="imgCentroDeAyuda" alt="Imagen banner centro de ayuda"></img>
+                <h3 className="textoEnImagenBanner">Centro de ayuda</h3>
+                <p className="textoEnImagenBanner2">¿Cómo podemos ayudarte?</p>
+            </div>
             <Container className = 'contenedor'>
             
             

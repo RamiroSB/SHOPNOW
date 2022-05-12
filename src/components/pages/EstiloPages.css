@@ -198,6 +198,10 @@
         margin-left: 2rem;
         
     }
+    .imgCentroDeAyuda {
+        width: 100%;
+        height: 200px;
+    }
 }
 
 @media only screen and (min-width: 900px) {
@@ -207,6 +211,29 @@
 }
 }
 
+.contenedorImgBanner {
+    position: relative;
+}
+
 .imgCentroDeAyuda {
     width: 100%;
+}
+
+.textoEnImagenBanner {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+}
+
+.textoEnImagenBanner2 {
+    left: 50%;
+    position: absolute;
+    top: 70%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
 }
